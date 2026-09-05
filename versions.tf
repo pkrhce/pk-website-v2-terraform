@@ -1,10 +1,24 @@
-terraform {
-  required_version = ">= 1.0.0"
+variable "project_id" {
+  description = "The GCP Project ID"
+  type        = string
+}
 
-  required_providers {
-    google = {
-      source  = "hashicorp/google"
-      version = "~> 5.0" # Use the 5.x provider
-    }
-  }
+variable "region" {
+  description = "The GCP Region"
+  type        = string
+}
+
+variable "zone" {
+  description = "The GCP Zone for the GKE cluster"
+  type        = string
+}
+
+variable "github_username" {
+  description = "Your GitHub Username"
+  type        = string
+}
+
+variable "github_app_repo" {
+  description = "The GitHub repository that GitHub Actions will run from"
+  type        = string
 }
