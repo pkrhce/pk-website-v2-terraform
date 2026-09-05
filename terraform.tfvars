@@ -1,0 +1,5 @@
+project_id      = "pk-sandbox-507311"
+region          = "us-central1"
+zone            = "us-central1-a"
+github_username = "pkrhce"
+github_app_repo = "pk-website-v2-app"
